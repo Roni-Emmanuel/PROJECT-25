@@ -34,15 +34,8 @@ function draw() {
   dustbinObj.display();
   paperobj.display();
 
-  if (keyDown(UP_ARROW)){
-	  paperobj.throwPaper();
-  }
-
-
-   
-
-  
-
-
+}
+function keyPressed(){
+	{ if (keyCode === UP_ARROW) { Matter.Body.applyForce(paperobj.body,paperobj.body.position,{x:300,y:-500}); } }
 }
 
