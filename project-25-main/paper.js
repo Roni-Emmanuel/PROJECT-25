@@ -26,9 +26,7 @@ class paper {
       }
 
       throwPaper(){
-        this.body.position.x = 1200;
-        this.body.position.y = 625;
-        this.display();
+       Matter.Body.applyForce(paperobj.body,paperobj.body.position,{x:130,y:-145});
       }
 
 
